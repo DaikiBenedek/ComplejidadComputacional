@@ -167,11 +167,12 @@ public class Practica1Complejidad {
                 break;
                 }
             }
-            if (!objetoDentro) {
+            
+            if (!objetoDentro) { 
                 System.out.println("No se pudo colocar el elemento " + elem.id + " con tamaño " + elem.tamanio);
+                System.out.println("Como no se puede colocar el elemento, no es posible acomodar los objetos en k cajones pero se intentará hacer la ejecución");
             }
         }
-
         // Imprimir el estado final de los cajones
         System.out.println("\nFase verificadora \nVeremos el contenido de cada cajon.");
         for (int i = 0; i < cajones.length; i++) {
